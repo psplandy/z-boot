@@ -148,7 +148,7 @@ mdelay(1500);
 	}
 
 	/* check launcher in ext4 fs of sd card */
-	if (file_exists("mmc", "1:2", "/usr/local/bin/emulationstation/emulationstation",
+	if (!file_exists("mmc", "1:2", "/usr/local/bin/emulationstation/emulationstation",
 				FS_TYPE_EXT)) {
 		lcd_setfg_color("white");
 		lcd_printf(0, 0, 1, "[ ZPG GAME PRO EMULATION Image ]");
